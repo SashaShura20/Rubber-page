@@ -1,5 +1,5 @@
-The project is fully adapted to different devices and screen resolutions. To achieve this, we used:
-* **Media queries (`@media`):** Point style change for breakpoints of `320px`, `768px', `1024px` and `1536px'.
-* **Mobile-First approach:** Styles were first developed for mobile devices, and then adapted for wider screens.
-* **Adaptive Images:** Using the `max-width: 100%` property and the `<picture>` tag to optimize loading on different devices.
-* **Hiding/rearranging elements:** Elements that are not essential for the mobile context are hidden or repositioned using `flex-order` and `display`.
+A rubber layout was used to smoothly change the size and margins between breakpoints.:
+* **Relative units of measurement:** Wide use of `%`, `vw`, `vh` for container and block widths.
+* **Functions `calc()` and `min()':** For creating complex and flexible size calculations (for example, `calc(50% - 20px)').
+*   **`flex-grow` / `flex-shrink`:** So that flex elements can dynamically fill the available space.
+* **Rubber typography:** Using `clamp()` or a combination of `vw` + `@media' to smoothly change the font size.
